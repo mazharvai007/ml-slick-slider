@@ -1,0 +1,44 @@
+.ml-slick-slider {
+	.slick-list {
+		.slick-track {
+			.slick-slide {
+				height: 400px;
+				background-size: cover;
+				background-position: center;
+				background-color: #333;
+				position: relative;
+				.slider-content {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					padding: 5%;
+					background-color: rgba(0, 0, 0, 0.5);
+					color: #fff;
+					.slider-title {
+						color: #fff;
+						padding: 0;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		background: green;
+		border: none;
+		padding: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		margin-top: -20px;
+		z-index: 2;
+		cursor: pointer;
+		&[aria-label='Next'] {
+			left: auto;
+			right: 0;
+		}
+	}
+}
